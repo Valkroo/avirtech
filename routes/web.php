@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\aboutController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\CareersController;
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\aboutController;
+use App\Http\Controllers\CareersController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,18 +19,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home', [
-        "title" => "Landing Page"
-    ]);
-});
+// front end
+Route::get('/', [FrontendController::class, 'index']);
+Route::get('/About-Us', [FrontendController::class, 'about']);
+Route::get('/Contact-Us', [FrontendController::class, 'contact']);
+Route::get('/Careers', [FrontendController::class, 'careers']);
+Route::get('/Blog', [FrontendController::class, 'blog']);
+Route::get('post/{post:slug}', [FrontendController::class, 'post']);
 
-Route::get('/about-us', [aboutController::class, 'index']);
 
-Route::get('/contact-us', [ContactController::class, 'index']);
 
-Route::get('/Blog', [PostController::class, 'show']);
 
-Route::get('post/{post:slug}', [PostController::class, 'index']);
 
-Route::get('/Careers', [CareersController::class, 'index']);
