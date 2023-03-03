@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class FrontendController extends Controller
 {
     public function index(){
-        return view('home', [
+        return view('index', [
             'title' => 'Landing Page'
         ]);
     }
@@ -41,11 +41,16 @@ class FrontendController extends Controller
         ]);
     }
 
-    public function post(Posts $post)
+    public function post(Posts $posts)
     {
         return view('post', [
             "title" => "Detail Post",
-            "post" => $post
+            "post" => $posts
         ]);
+    }
+
+    public function dashboard()
+    {
+        return view('admin.index');
     }
 }

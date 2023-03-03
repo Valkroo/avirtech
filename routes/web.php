@@ -1,12 +1,9 @@
 <?php
 
+use App\Http\Controllers\adminControllers\DashboardPostsController;
 use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\PostController;
-use App\Http\Controllers\aboutController;
-use App\Http\Controllers\CareersController;
-use App\Http\Controllers\ContactController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +22,9 @@ Route::get('/About-Us', [FrontendController::class, 'about']);
 Route::get('/Contact-Us', [FrontendController::class, 'contact']);
 Route::get('/Careers', [FrontendController::class, 'careers']);
 Route::get('/Blog', [FrontendController::class, 'blog']);
-Route::get('post/{post:slug}', [FrontendController::class, 'post']);
+Route::get('/post/{posts:slug}', [FrontendController::class, 'post']);
+Route::get('/dashboard', [FrontendController::class, 'dashboard']);
 
-
-
-
-
+// back end
+Route::resource('/dashboard/post', DashboardPostsController::class);
+Route::get('/dashboard/cekSlug', [DashboardPostsController::class, 'Slug']);

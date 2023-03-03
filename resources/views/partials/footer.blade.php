@@ -28,13 +28,13 @@
       <div class="d-flex pt-40 pb-40">
         <div class="me-auto">
           <div class="fw-600 fs-16 d-flex gap-32">
-            <a class="text-decoration-none av-text-neutral-20" href="/about-us" role="button">
+            <a class="text-decoration-none av-text-neutral-20" href="/About-Us" role="button">
             <div>About Us</div>
             </a>
             <a class="text-decoration-none av-text-neutral-20" href="#" role="button">
               <div>Teams</div>
             </a>
-            <a class="text-decoration-none av-text-neutral-20" href="careers.html" role="button">
+            <a class="text-decoration-none av-text-neutral-20" href="/Careers" role="button">
             <div>Careers</div>
             </a>
             <a class="text-decoration-none av-text-neutral-20" href="#" role="button">

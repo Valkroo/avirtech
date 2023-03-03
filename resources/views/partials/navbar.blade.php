@@ -37,7 +37,7 @@
             <div class="av-drop-content av-bg-primary">
               <div class="row row-cols-md-2 g-0">
                 <div class="col">
-                  <a href="/about-us" class="fw-semibold text-light md"><img src="/svg/person.svg" alt="" class="pt-3 ps-3 pe-4 pg-dr">About Us</a>
+                  <a href="/About-Us" class="fw-semibold text-light md"><img src="/svg/person.svg" alt="" class="pt-3 ps-3 pe-4 pg-dr">About Us</a>
                 </div>
                 <div class="col">
                   <a href="/Blog" class="fw-semibold text-light"><img src="/svg/Blog.svg" alt="" class="pt-3 ps-3 pe-4 pg-dr">Blog</a>
@@ -49,7 +49,7 @@
                   <a href="" class="fw-semibold text-light"><img src="/svg/Privacy Policy.svg" alt="" class="pt-3 pe-4 pp">Privacy Policy</a>
                 </div>
                 <div class="col">
-                  <a href="/contact-us" class="fw-semibold text-light"><img src="/svg/contact.svg" alt="" class="pt-3 ps-3 pe-4 pg-dr">Contact Us</a>
+                  <a href="/Contact-Us" class="fw-semibold text-light"><img src="/svg/contact.svg" alt="" class="pt-3 ps-3 pe-4 pg-dr">Contact Us</a>
                 </div>
               </div>
             </div>

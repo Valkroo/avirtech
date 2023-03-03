@@ -11,7 +11,7 @@
               <p class="fw-400 fs-16 av-text-neutral-80">At Avirtech we would like to grow with you and support you from the 
                  <br> beginning as your agriculture technology partner. Grow, digitize, and
                  <br> revolutionize your plantation together with Avirtech.</p>
-              <form action="/contact-us" class="d-flex justify-content-center" >
+              <form action="/Contact-Us" class="d-flex justify-content-center" >
                 <button class="btn mt-4 av-text-neutral-10 fw-600 fs-16 mb-224 av-border-neutral-default" type="submit">Get in touch</button>
               </form>
         </div>
